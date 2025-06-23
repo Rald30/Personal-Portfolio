@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-container{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    outline: solid 0.5px #282829;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+    background-color: #18181B;
+}
+
+.nav-links{
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+    align-items: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+.links a{
+    padding-bottom: 0.5rem;
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links a:hover{
+    color: #ff6600;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.nav-button{
+    border-radius: 2rem;
+    border: solid 2px #ff6600e1;
+    background-color: transparent;
+    width: 120px;
+    height: 60px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.nav-button:hover{
+    background-color: #ff6600e1;
+    color: #000000;
+    transition: all 0.4s ease;
+}
+
+.header-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.header-image{
+    display: flex;
+    max-width: auto;
+    height: auto;
+}
+
+.header-image img{
+    width: 100;
+    height: 100%;
+    border-radius: 6rem;
+    margin: 3.5rem;
+}
+
+header .content span{
+    color: #ff6600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+header .content p{
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+header .header-image::before{
+    content: "o";
+    position: fixed;
+    top: 0;
+    left: 74%;
+    transform: translateX(-50%);
+    font-size: 54rem;
+    font-weight: 400;
+    line-height: 48rem;
+    color: #ff6600;
+    opacity: 0.2;
+    z-index: -100;
+}
+
